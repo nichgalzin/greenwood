@@ -1,0 +1,318 @@
+
+/* Universal Styles */
+
+body {
+    background-color: #f2e8cf;
+    color: #f2e8cf;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: "Work Sans", sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Hamburger menu and button*/
+
+button {
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    background: none;
+    border: 3px solid #f2e8cf;
+    outline: 3px solid #f2e8cf;
+    outline-offset: -3px;
+    transform: outline-offset .30ms;
+}
+
+#closebtn {
+    font-size: 2em;
+    color: #f2e8cf;
+}
+
+svg {
+    fill: #f2e8cf;
+}
+
+#openbtn:hover,
+#openbtn:focus {
+  outline-offset: 2px;
+}
+
+#menu {
+    height: 50%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    right: 0;
+    background-color: #BC6C25;
+    opacity: 0.9;
+    padding-top: 3rem; 
+    transition: width .5s; 
+  }
+
+  #menu a {
+    padding: 10px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #f2e8cf;
+    display: block;
+    transition: color 0.3s;
+  }
+
+  #menu a:hover,
+  #menu a:focus {
+    color: #ffff;
+    font-size: 2.2rem;
+  }
+
+  #menu a:active{
+    text-decoration: underline;
+  }
+
+  /* Banner */
+
+#banner {
+    background-image: url('./images/axe-block.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 40rem;
+}
+
+.header-text {
+    width: 20rem;
+    background-color: #283618;
+    opacity: .9;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    border-radius: 10px;
+}
+
+.header-text h1 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.header-text p {
+    font-size: 2rem;
+    padding: 2rem 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+/* Date Box */
+
+#date-box {
+    width: 15rem;
+    background-color: #DDA15E;
+    position: absolute;
+    top: 32rem;
+    right: 1rem;
+    opacity: .9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#date-box p {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    color: #f2e8cf;
+}
+
+#date-box a {
+    color: #283618;
+}
+
+/* Greenwood section */
+
+#greenwood-box {
+    display: grid; 
+    width: 100%;
+    height: 40rem;
+    margin-top: 5rem;
+    gap: .5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#greenwood-box img {
+    width: 100%;
+    height: 100%;
+}
+
+#greenwood-box h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#greenwood-box p  {
+    font-family: 'Open Sans', sans-serif;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+.box-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2 ;
+}
+
+.box-2 {
+    background-color: #BC6C25;
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.box-3 {
+    background-color: #606C38;
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 2;
+}
+
+.box-4 {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2 ;
+}
+
+/* Resources section */
+
+#resources {
+    display: grid; 
+    width: 100%;
+    margin-top: 5rem;
+    grid-template-columns: repeat(2, 1fr);  
+}
+#resources h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #1f2421;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#resources p  {
+    font-family: 'Open Sans', sans-serif;
+    color: #1f2421;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+#resources ul  {
+    font-family: 'Open Sans', sans-serif;
+    color: #1f2421;
+    list-style: square;
+    margin-left: 4rem;
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+.column-2 a {
+    color: #BC6C25;
+}
+
+.column-1 {
+    grid-column: 1 / span 1;
+}
+
+.column-2 {
+    grid-column: 2 / span 1
+}
+
+
+/* Tools section */
+
+#tool-box{
+    display: grid; 
+    width: 100%;
+    margin-top: 5rem;
+    gap: 1rem ;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 4rem repeat(3, 1fr);
+}
+
+#tool-box img {
+    width: 100%;
+    height: 100%;
+}
+
+#tool-box h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    padding: 1rem; 
+}
+
+#tool-box p  {
+    font-family: 'Open Sans', sans-serif;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+.tool-header {
+    background-color: #283618;
+    grid-column: 2 / span 5;
+}
+
+.row-1 {
+    background-color: #DDA15E;
+    grid-column: 5 / span 7;   
+    grid-row: 2 / span 1;
+}
+
+.row-2 {
+    background-color: #606C38;
+    grid-column: 2 / span 7;   
+    grid-row: 3 / span 1;
+}
+
+.row-3 {
+    background-color: #BC6C25;
+    grid-column: 5 / span 7;   
+    grid-row: 4 / span 1;
+}
+
+.img-1 {
+    grid-column: 1 / span 4;   
+    grid-row: 2 / span 1;
+}
+
+.img-2 {
+    grid-column: 9 / span 4;   
+    grid-row: 3 / span 1;
+}
+
+.img-3 {
+    grid-column: 1 / span 4;   
+    grid-row: 4 / span 1;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #283618;
+    width: 100%;
+    height: 5rem;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer a {
+    color: #f2e8cf;
+   
+}
+
+.footer p {
+    margin-top: 2rem;
+    padding: 0 2rem;
+} 
+
