@@ -139,8 +139,7 @@ svg {
 #greenwood-box {
     display: grid; 
     width: 100%;
-    height: 40rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     gap: .5rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -154,7 +153,8 @@ svg {
 #greenwood-box h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
 }
 
 #greenwood-box p  {
@@ -316,3 +316,19 @@ svg {
     padding: 0 2rem;
 } 
 
+/* Media Queries */
+
+@media screen and (max-width: 550px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .header-text {
+        width: 15rem;
+        background-color: #283618;
+        opacity: .9;
+        position: absolute;
+        border-radius: 10px;
+    }
+}
