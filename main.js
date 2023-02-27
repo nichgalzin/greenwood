@@ -6,7 +6,7 @@ const closeBtn = document.getElementById('closebtn');
 
 
 function openNav() {
-    menu.style.width = '28%';
+    menu.style.width = '35%';
     openBtn.setAttribute('aria-expanded', true);
   }
   

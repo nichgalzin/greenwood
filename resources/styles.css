@@ -13,8 +13,13 @@ h1 {
 
 p {
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5rem;
 }
 
+em {
+    font-weight: 600;
+    font-style: italic;
+}
 
 /* Hamburger menu and button*/
 
@@ -47,7 +52,7 @@ svg {
 }
 
 #menu {
-    height: 50%; 
+
     width: 0; 
     position: fixed; 
     z-index: 1; 
@@ -60,7 +65,7 @@ svg {
   }
 
   #menu a {
-    padding: 10px 8px 8px 32px;
+    padding: 10px 8px 32px 32px;
     text-decoration: none;
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
@@ -128,10 +133,12 @@ svg {
     padding-top: .5rem;
     padding-bottom: .5rem;
     color: #f2e8cf;
+    font-style: italic;
 }
 
 #date-box a {
     color: #283618;
+    font-weight: 600;
 }
 
 /* Greenwood section */
@@ -139,7 +146,8 @@ svg {
 #greenwood-box {
     display: grid; 
     width: 100%;
-    margin-top: 3rem;
+    max-width: 75rem;
+    margin: 3rem auto;
     gap: .5rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -153,35 +161,41 @@ svg {
 #greenwood-box h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
-    padding-top: 1rem;
-    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
 }
 
 #greenwood-box p  {
     font-family: 'Open Sans', sans-serif;
-    padding: 1rem;
-    line-height: 1.5rem;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+    line-height: 1.75rem;
 }
 
 .box-1 {
-    grid-column: 1 / span 2;
+    grid-column: 3 / span 2;
     grid-row: 1 / span 2 ;
 }
 
 .box-2 {
     background-color: #BC6C25;
-    grid-column: 3 / span 2;
+    grid-column: 1 / span 2;
     grid-row: 1 / span 2;
 }
 
 .box-3 {
     background-color: #606C38;
-    grid-column: 1 / span 2;
+    grid-column: 3 / span 2;
     grid-row: 3 / span 2;
 }
 
+.box-3 a {
+    color: #f2e8cf;
+    font-weight: 600;
+}
+
 .box-4 {
-    grid-column: 3 / span 2;
+    grid-column: 1 / span 2;
     grid-row: 3 / span 2 ;
 }
 
@@ -190,20 +204,21 @@ svg {
 #resources {
     display: grid; 
     width: 100%;
-    margin-top: 5rem;
+    max-width: 75rem;
+    margin: 5rem auto;
     grid-template-columns: repeat(2, 1fr);  
 }
 #resources h2 {
     font-family: 'Open Sans', sans-serif;
     color: #1f2421;
     font-size: 2rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 #resources p  {
     font-family: 'Open Sans', sans-serif;
     color: #1f2421;
-    padding: 1rem;
+    padding: 1rem 2rem;
     line-height: 1.5rem;
 }
 
@@ -218,6 +233,7 @@ svg {
 
 .column-2 a {
     color: #BC6C25;
+    font-weight: 600;
 }
 
 .column-1 {
@@ -234,7 +250,8 @@ svg {
 #tool-box{
     display: grid; 
     width: 100%;
-    margin-top: 5rem;
+    max-width: 75rem;
+    margin: 5rem auto;
     gap: 1rem ;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 4rem repeat(3, 1fr);
@@ -248,18 +265,25 @@ svg {
 #tool-box h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
-    padding: 1rem; 
+    padding-top: 2rem;
+    padding-left: 3rem;
 }
 
 #tool-box p  {
     font-family: 'Open Sans', sans-serif;
-    padding: 1rem;
-    line-height: 1.5rem;
+    padding: 2rem 3rem;
+    line-height: 1.75rem;
 }
 
-.tool-header {
+#tool-header {
     background-color: #283618;
     grid-column: 2 / span 5;
+    display: flex;
+    align-items: center;
+}
+
+#tool-header h2 {
+    padding: 0 2rem;
 }
 
 .row-1 {
@@ -318,17 +342,73 @@ svg {
 
 /* Media Queries */
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 735px) {
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
-    
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #menu a {
+        font-size: 1.25rem;
+        padding: 8px 8px 15px 10px;
+    }
+
+    #menu a:hover,
+    #menu a:focus {
+    color: #ffff;
+    font-size: 1.45rem;
+    }
+
+    #menu a:active{
+      text-decoration: underline;
+  }
+
+    #banner p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
     .header-text {
-        width: 15rem;
-        background-color: #283618;
-        opacity: .9;
-        position: absolute;
-        border-radius: 10px;
+        width: 12rem;
+        top: 8rem;
+        
+    }
+
+    #date-box{
+        top: 28rem;
+    }
+
+    #greenwood-box {
+        display: block;
+    }
+
+    .box-1, .box-3, .box-4 {
+        margin-top: 1.5rem;
+
+    }
+
+    #resources, #tool-box {
+        display: block;
+    }
+
+    .img-1, .img-2, .img-3, .row-1, .row-2, .row-3 {
+        margin-top: 1.5rem;
+    }
+
+    .footer {
+        margin-top: 3rem;
+    }
+
+    .footer p {
+        font-size: .75rem;
     }
 }
+    
