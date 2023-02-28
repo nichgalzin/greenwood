@@ -1,6 +1,6 @@
 /* Hamburger menu */
 
-const menu = document.getElementById('menu');
+const menu = document.querySelector('div');
 const openBtn = document.getElementById('openbtn');
 const closeBtn = document.getElementById('closebtn');
 
