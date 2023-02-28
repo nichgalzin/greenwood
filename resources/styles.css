@@ -146,7 +146,7 @@ svg {
 #greenwood-box {
     display: grid; 
     width: 100%;
-    max-width: 75rem;
+    max-width: 65rem;
     margin: 3rem auto;
     gap: .5rem;
     grid-template-columns: repeat(4, 1fr);
