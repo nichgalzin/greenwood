@@ -14,6 +14,8 @@ h1 {
 p {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5rem;
+    text-indent: 2rem;
+    padding: 1rem 3.5rem;
 }
 
 em {
@@ -52,12 +54,10 @@ svg {
 }
 
 #menu {
-
     width: 0; 
     position: fixed; 
-    z-index: 1; 
-    top: 0;
     right: 0;
+    z-index: 1; 
     background-color: #BC6C25;
     opacity: 0.9;
     padding-top: 3rem; 
@@ -118,11 +118,11 @@ svg {
 /* Date Box */
 
 #date-box {
-    width: 15rem;
+    width: 18rem;
     background-color: #DDA15E;
     position: absolute;
-    top: 32rem;
-    right: 1rem;
+    top: 30rem;
+    right: 3rem;
     opacity: .9;
     border-radius: 10px;
     text-align: center;
@@ -130,8 +130,7 @@ svg {
 
 #date-box p {
     font-family: 'Open Sans', sans-serif;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding: .5rem;
     color: #f2e8cf;
     font-style: italic;
 }
@@ -146,6 +145,7 @@ svg {
 #greenwood-box {
     display: grid; 
     width: 100%;
+    max-height: 80rem;
     max-width: 65rem;
     margin: 3rem auto;
     gap: .5rem;
@@ -167,8 +167,6 @@ svg {
 
 #greenwood-box p  {
     font-family: 'Open Sans', sans-serif;
-    padding: 2rem 3rem;
-    margin-top: 2rem;
     line-height: 1.75rem;
 }
 
@@ -218,7 +216,6 @@ svg {
 #resources p  {
     font-family: 'Open Sans', sans-serif;
     color: #1f2421;
-    padding: 1rem 2rem;
     line-height: 1.5rem;
 }
 
@@ -271,7 +268,8 @@ svg {
 
 #tool-box p  {
     font-family: 'Open Sans', sans-serif;
-    padding: 2rem 3rem;
+    font-size: 1.15rem;
+
     line-height: 1.75rem;
 }
 
@@ -280,6 +278,7 @@ svg {
     grid-column: 2 / span 5;
     display: flex;
     align-items: center;
+    padding: 1rem;
 }
 
 #tool-header h2 {
@@ -297,6 +296,12 @@ svg {
     grid-column: 2 / span 7;   
     grid-row: 3 / span 1;
 }
+
+.row-2 a {
+    color: #f2e8cf;
+    font-weight: 600;
+}
+
 
 .row-3 {
     background-color: #BC6C25;
@@ -342,18 +347,16 @@ svg {
 
 /* Media Queries */
 
-@media screen and (max-width: 735px) {
+@media screen and (max-width: 1080px) {
 
     h1 {
         font-size: 2.5rem;
     }
 
-    h2 {
-        font-size: 2rem;
-    }
-
     p {
         font-size: 1rem;
+        padding: 1rem 1rem;
+
     }
 
     #menu a {
@@ -378,7 +381,7 @@ svg {
 
     .header-text {
         width: 12rem;
-        top: 8rem;
+        top: 6rem;
         
     }
 
@@ -388,15 +391,40 @@ svg {
 
     #greenwood-box {
         display: block;
+        width: 90%;
+        max-height: none;
+    }
+
+    .box-1, .box-4 {
+        width: 70%;
+        margin: 0 auto;
     }
 
     .box-1, .box-3, .box-4 {
-        margin-top: 1.5rem;
-
+        margin-top: 1.5rem; 
     }
 
     #resources, #tool-box {
         display: block;
+        width: 80%;
+    }
+
+    #tool-header {
+        width: 75%;
+    }
+
+    #tool-header h2 {
+        font-size: 1.5rem;
+    }
+
+    #tool-box p  {
+        font-size: 1rem;
+       
+    }
+    
+    .img-1, .img-2, .img-3 {
+        width: 70%;
+        margin: 0 auto;
     }
 
     .img-1, .img-2, .img-3, .row-1, .row-2, .row-3 {
@@ -411,4 +439,6 @@ svg {
         font-size: .75rem;
     }
 }
+
+
     
