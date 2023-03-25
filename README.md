@@ -3,9 +3,9 @@ The website is a hobby page built for my application to the Founders and Coders 
 working. It's a hobby that I both love and find very therapeutic, please see the resources section of the site to learn more.
 
 ## Displaying the date with JavaScript
-One requirement for this project was display an accurate date somewhere on the site. To give this some context I decided to display the date as part of a countdown to a spoon carving event in the UK. To achieve this I used some built in methods JavaScript has for working with dates: <br>
+One requirement for this project was display an accurate date somewhere on the site. To give this some context I decided to display the date as part of a countdown to a spoon carving event in the UK. To achieve this I used some built in methods JavaScript has for working with dates: <br><br> 
 ```Date()``` By calling a ```new Date()``` js lets you access a live and updatable date to use in your code. <br>
-```.toLocalString('en-GB')``` Format the date to UK standard (i.e. day/month/year).
+```.toLocalString('en-GB')``` Format the date to UK standard (i.e. day/month/year). <br>
 ```.getMonth()``` Extract just the current month of the ```Date()``` method. I used this in writing conditional for my countdown.
 
 ## CSS Grid
